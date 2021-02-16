@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Website Design System</title>
+        <link href="Resourses/index.css" rel="stylesheet"
+        type="text/css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,500&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">   
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Mulish:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0">
+
+    </head>
+    <body>
+        <!--header-->
+        <header>
+            <h1>Frankie's Website Style Guide</h1>
+        </header>
+        <!--navigation-->
+        <nav class="nav">
+            <button><a href="#color">Colors</a></button>
+            <button><a href="#font">Fonts</a></button>
+            <button><a href="#style">Styles</a></button>
+            <button><a href="#positioning">Positioning</a></button>
+         <button><a href="#box-model">Box Model</a></button>
+        </nav>
+        <!--main-->
+        
+        <main>
+            <section class="color" id="color">
+                <h2> Colors </h2>
+                <div class="light-blue"><p>Light Blue<br>#ADD8E6</p></div>
+                <div class="turquoise"><p>Dark Turquoise<br>rgb(0,206,209)</p></div>
+                <div class="ming"><p>Ming<br>rgba(51,110,123,1)</p></div>
+                <div class="coral"><p>Light Coral<br>hsl(195,53%,79%)</p></div>
+                <div class="maroon"><p>Maroon<br>hsla(331,74%,30%,1.0)</p></div>
+            </section>
+
+            <section class="font" id="font">
+                <h2>Fonts</h2>
+                <article>
+                    <h3 class="roboto">Roboto</h3>
+                    <p class="roboto">The quick brown fox jumps over the lazy dog.</p>
+                    <p class="bold roboto">The quick brown fox jumps over the lazy dog.</p>
+                    <p class="italic roboto">The quick brown fox jumps over the lazy dog.</p>
+                </article>
+                <article>
+                    <h3 class="lora">Lora</h3>
+                    <p class="lora">The quick brown fox jumps over the lazy dog.</p>
+                    <p class="bold lora">The quick brown fox jumps over the lazy dog.</p>
+                    <p class="italic lora">The quick brown fox jumps over the lazy dog.</p>
+                </article>
+                <article>
+                    <h3 class="merriweather">Merriweather</h3>
+                    <p class="merriweather">The quick brown fox jumps over the lazy dog.</p>
+                    <p class="bold merriweather">The quick brown fox jumps over the lazy dog.</p>
+                    <p class="italic merriweather">The quick brown fox jumps over the lazy dog.</p>
+                </article>
+                <article>
+                    <h3 class="mulish">Mulish</h3>
+                    <p class="mulish">The quick brown fox jumps over the lazy dog.</p>
+                    <p class=" bold mulish">The quick brown fox jumps over the lazy dog.</p>
+                    <p class=" italic mulish">The quick brown fox jumps over the lazy dog.</p>
+                </article>
+               </section>
+
+            <section class="style">
+                <h2>Text Styles</h2>
+                <h2 class="styles">H1:Main page heading</h2>
+                <ul>
+                    <li>Font-weight:700 (bold)</li>
+                    <li>Font-size: 26px</li>
+                    <li>Font-family: Nunito Sans</li>
+                </ul>
+                <h2 class="subheading">H2:Subheading</h2>
+                <ul>
+                    <li>Font-weight:500</li>
+                    <li>Font-size: 18px</li>
+                    <li>Font-family: Poppins</li>
+                </ul>
+                <p>P: Paragraph text</p>
+                <ul>
+                    <li>Font-weight:400 (regular)</li>
+                    <li>Font-size: 14px</li>
+                    <li>Font-family: Poppins</li>
+                </ul>
+
+            </section>
+
+            <section class="Positioning">
+                <h2>Positioning</h2>
+
+                <h3>Static</h3>
+                <div class="static">Static div</div>
+                <p>HTML elements are positioned static by default.</p>
+
+                <h3>Relative</h3>
+                <div class="default">Default div
+                    <div class="relative">Relative div</div>
+                </div>
+                
+                <p>An element with position relative; is positioned relative to its normal position.
+                    <br>Setting the top ,right, bottom, and left properties of a relatively-positioned element will cause it to be 
+                    adjusted away from its normal position. Other content will not be adjusted to fit any gap left by the element.
+                </p>
+
+                <h3>Fixed</h3>
+                <div class="fixed">Fixed div</div>
+                <p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same
+                    place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+                </p>
+
+                <h3>Absolute</h3>
+                <div class="relative-2">Relative</div>
+                <div class="absolute">Absolute</div>
+                <p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned 
+                    relative to the viewport, like fixed).
+                </p>
+
+            </section>
+            <section class="box-model" id="box-model">
+                <h2>Box Model</h2>
+                <p>The CSS box model is essentially the box that wraps around every HTML element.</p>
+
+                <div>The text is the content. Surrounded by 50px of padding, 20px margin, and 15px border.</div>
+             </section>
+        </main>
+
+
+    </body>
+</html>
